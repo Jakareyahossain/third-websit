@@ -49,14 +49,22 @@ ul > li { list-style-type:none;
           
 ul > li > a{ text-decoration: none;
              padding:6px 8px;
-             font-size: 14px;
+             font-size: 12px;
+             font-weight: bold;
+             text-transform: uppercase;
              transition:0.5s;
              color:white;} 
              
 ul > li > a:hover, ul > li > a.active { background-color:rgb(209, 209, 209);
                                        color:black}             
-                  
-                  
+                   
+             /* header section code started              */
+
+header { background-image:url(./img/background.jpg);
+         background-position: center;
+         background-repeat: no-repeat;
+         height:93vh;
+         background-size: cover;}
 
 
 
@@ -73,6 +81,7 @@ ul > li > a:hover, ul > li > a.active { background-color:rgb(209, 209, 209);
 #check:checked ~ ul { left:0%;}
 
 #check:checked ~ .bar-btn > i::before { content:"\f00d";
+                                        font-size: 18px;
 
                
 }
@@ -90,7 +99,7 @@ ul > li > a:hover, ul > li > a.active { background-color:rgb(209, 209, 209);
 
  ul > li {padding: 50px 0px;} 
 
- ul > li > a { font-size: 16px;
+ ul > li > a { font-size: 14px;
                transition: none;}
 
 
