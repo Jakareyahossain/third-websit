@@ -9,7 +9,7 @@ body { font-family:sans-serif;}
 .navbar { display:flex;
           background-color:#010F12;
           justify-content:space-between;
-          height:50px;
+          height:60px;
           width:100%;
           align-items: center;
           padding:0px 30px;
@@ -28,7 +28,7 @@ body { font-family:sans-serif;}
            
  .logo-img { width:50px;
              position: relative;
-             height:50px;} 
+             height:60px;} 
              
 .logo-img > img { width:100%;
                   height:100%;} 
@@ -73,7 +73,7 @@ header { background-image:url(./img/background.jpg);
 
                      /* Responsive work strted  */
 
-@media only screen and (max-width:725px) {
+@media only screen and (max-width:991px) {
 
 
 .bar-btn { display:block;}
@@ -94,7 +94,7 @@ header { background-image:url(./img/background.jpg);
       left:-100%;
       transition: 0.5s;
       width:100%;
-      background-color: rgb(128, 127, 127);
+      background-color: #807f7f;
       }
 
  ul > li {padding: 50px 0px;} 
@@ -106,4 +106,81 @@ header { background-image:url(./img/background.jpg);
 
  ul > li > a:hover, ul > li > a.active { background: none;
                                           color:red;}    
-}                    
+}   
+
+
+             /* fist section code started  */
+
+.fist-sec { background-color:#308ACE;}  
+
+.fist-sec-title { color:white;
+                  padding-top:30px;
+                  text-align: center;
+                  font-size:12px ;}
+
+.prent-fist-sec { display:grid;
+                  padding-bottom:70px;
+                  width:800px;
+                  margin:25px auto;
+                  grid-template-columns: repeat(3, 1fr);
+                  grid-gap:20px;}  
+                  
+.fist-sec-fist-card { 
+                      text-align: center;
+                      background-color:rgb(252, 249, 249);
+                      padding:10px 8px;} 
+                      
+.fist-sec-fist-card > i {  font-size:18px;
+                           padding:5px 0px;
+                           font-weight: bold;}
+                          
+.fist-sec-fist-card > h3 { font-size:14px;
+                           padding:5px 2px;
+                           font-weight:bolder;}   
+                           
+.fist-sec-fist-card > p { font-size: 13px;
+                          line-height:18px;}  
+                          
+                          
+@media only screen and (max-width:688px) {
+
+        .prent-fist-sec { display:grid;
+                          width:100%;
+                          grid-gap:15px;
+                          grid-template-columns: repeat(1, 1fr);}
+
+     .fist-sec-fist-card > i {  font-size:20px;
+                                padding:5px 0px;
+                                font-weight: bold;}
+                               
+     .fist-sec-fist-card > h3 { font-size:16px;
+                                padding:5px 0px;
+                                font-weight:bolder;}   
+                                
+     .fist-sec-fist-card > p { font-size: 15px;
+                               line-height:20px;}                           
+ 
+
+}      
+
+@media only screen and (min-width:688px) and ( max-width:991px) {
+
+         .prent-fist-sec {      display:grid;
+                                width:100%;
+                                margin:25px auto;
+                                grid-template-columns: repeat(2, 1fr);
+                                grid-gap:15px;;}
+
+             .fist-sec-fist-card > i {  font-size:19px;
+                                        padding:5px 0px;
+                                        font-weight: bold;}
+                                       
+             .fist-sec-fist-card > h3 { font-size:15px;
+                                        padding:5px 0px;
+                                        font-weight:bolder;}   
+                                        
+             .fist-sec-fist-card > p { font-size: 14px;
+                                       line-height:19px;}                                  
+
+
+}
