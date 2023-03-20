@@ -73,7 +73,30 @@ header { background-image:url(./img/background.jpg);
 
                      /* Responsive work strted  */
 
-@media only screen and (max-width:991px) {
+@media only screen and (max-width:688px) {
+
+  
+  .navbar { 
+            height:50px;
+            padding:0px 30px;
+  
+           }   
+           
+
+    .logo > h4{ 
+                margin-left:-7px ;
+                font-size:14px;
+              } 
+              
+    .logo-img { width:40px;
+                position: relative;
+                height:50px;}            
+
+
+        header { 
+                height:70vh;
+                }
+       
 
 .bar-btn { display:block;}
 
@@ -85,36 +108,92 @@ header { background-image:url(./img/background.jpg);
                
 }
 
+.navbar { padding:0px  25px 0px 0px ;} 
+
 .navbar >  ul { position:absolute;
-      top:50px;
-      flex-direction: column;
-      height:95vh;
-      text-align: center;
-      left:-100%;
-      transition: 0.5s;
-      width:100%;
-      background-color: #807f7f;
+                top:50px;
+                flex-direction: column;
+                height:70vh;
+                text-align: center;
+                left:-100%;
+                transition: 0.5s;
+                width:100%;
+                background-color: #807f7f;
       }
 
-.navbar > ul > li {padding: 50px 0px;} 
+.navbar > ul > li {padding: 35px 0px;} 
 
-.navbar > ul > li > a { font-size: 14px;
+.navbar > ul > li > a { font-size: 12px;
                transition: none;}
 
 
 
   .navbar > ul > li > a:hover, ul > li > a.active { background: none;
-                                          color:red;}    
+                                          color:red;}   
+ 
+       
+                                             
+                                          
 }   
+            
+                     /* Responsive work strted  */
 
+@media only screen and (min-width:688px) and (max-width:991px) {
+
+        .bar-btn { display:block;}
+        
+        #check:checked ~ ul { left:0%;}
+        
+        #check:checked ~ .bar-btn > i::before { content:"\f00d";
+                                                font-size: 18px;
+        
+                       
+        }
+        
+        .navbar { padding:0px 35px 0px 15px;} 
+        
+        .navbar >  ul { position:absolute;
+                        top:60px;
+                        flex-direction: column;
+                        height:70vh;
+                        text-align: center;
+                        left:-100%;
+                        transition: 0.5s;
+                        width:100%;
+                        background-color: #807f7f;
+              }
+        
+        .navbar > ul > li {padding:50px 0px;} 
+        
+        .navbar > ul > li > a { font-size: 14px;
+                       transition: none;}
+        
+        
+        
+          .navbar > ul > li > a:hover, ul > li > a.active { background: none;
+                                                  color:red;}   
+         
+               
+  
+header { background-image:url(./img/background.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        height:70vh;
+        background-size: cover;}
+
+                                                  
+                                                  
+        }   
 
              /* fist section code started  */
 
 .fist-sec { background-color: #13a7dd;
-            }  
+            } 
+            
+            
 
 .fist-sec-title { color:white;
-                  padding-top:30px;
+                  padding-top:50px;
                   padding-bottom: 25px;
                   text-align: center;
                   font-size:12px ;}
@@ -474,6 +553,8 @@ header { background-image:url(./img/background.jpg);
                           
 @media only screen and (max-width:688px) {
 
+        .prent-fist-sec > .fist-sec-title { padding-top: 20px;}
+
         .prent-fist-sec { display:grid;
                           width:100%;
                           grid-gap:10px;
@@ -554,7 +635,7 @@ header { background-image:url(./img/background.jpg);
 
 .five-section { padding:90px 0px;}
         
-.five-sec-form {    margin: 0px 40px;
+.five-sec-form {    margin: 0px 20px;
                      padding: 15px;
                }  
                
@@ -704,8 +785,8 @@ header { background-image:url(./img/background.jpg);
 
 
         
-      .five-sec-form { margin: 0px 150px;
-                       padding: 30px;
+      .five-sec-form { margin: 0px 60px;
+                       
     
                        }                          
                  
